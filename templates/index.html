@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Source Credibility & Fact Check</title>
+</head>
+<body>
+    <h1>Check News Credibility</h1>
+
+    <form method="POST">
+        <textarea name="user_text" rows="4" cols="60" placeholder="Enter news text...">{{ user_text or '' }}</textarea><br><br>
+        <button type="submit">Check</button>
+    </form>
+
+    {% if model_result %}
+        <h2>Model Prediction:</h2>
+        <p>{{ model_result }}</p>
+    {% endif %}
+
+    {% if fact_results and fact_results.claims %}
+        <h2>Fact Check Results:</h2>
+        <ul>
+            {% for claim in fact_results.claims %}
+                <li>
+                    <strong>Claim:</strong> {{ claim.text }}<br>
+                    {% for review in claim.claimReview %}
+                        <em>Rating:</em> {{ review.textualRating }}<br>
+                        <em>Publisher:</em> {{ review.publisher.name }}<br>
+                        <a href="{{ review.url }}" target="_blank">Read more</a><br>
+                    {% endfor %}
+                </li>
+                <hr>
+            {% endfor %}
+        </ul>
+    {% elif model_result %}
+        <p>No fact check results found.</p>
+    {% endif %}
+</body>
+</html>

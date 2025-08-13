@@ -1,0 +1,52 @@
+# Source Credibility Prediction System Requirements
+
+# Core ML Libraries
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Deep Learning (optional, for advanced models)
+tensorflow>=2.12.0
+torch>=2.0.0
+transformers>=4.20.0
+
+# Natural Language Processing
+nltk>=3.8
+textblob>=0.17.0
+spacy>=3.5.0
+
+# Feature Engineering and Text Processing
+textstat>=0.7.0
+wordcloud>=1.9.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Web Framework (for API deployment)
+flask>=2.3.0
+fastapi>=0.100.0
+uvicorn>=0.22.0
+
+# Data Handling
+openpyxl>=3.1.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# Model Deployment and Monitoring
+mlflow>=2.5.0
+joblib>=1.3.0
+
+# Development and Testing
+pytest>=7.4.0
+jupyter>=1.0.0
+notebook>=6.5.0
+
+# Progress Bars and Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# Optional: GPU acceleration
+# cupy-cuda11x>=12.0.0  # Uncomment for CUDA 11.x
+# cupy-cuda12x>=12.0.0  # Uncomment for CUDA 12.x
