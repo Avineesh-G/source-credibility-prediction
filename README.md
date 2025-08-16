@@ -318,5 +318,6 @@ For questions and support:
 
 ---
 
-**Note**: This system is designed for research and educational purposes. Always combine automated assessments with human judgment for critical decisions.#   s o u r c e - c r e d i b i l i t y - p r e d i c t i o n  
+**Note**: This system is designed for research and educational purposes. Always combine automated assessments with human judgment for critical decisions.#   s o u r c e - c r e d i b i l i t y - p r e d i c t i o n 
+ 
  
